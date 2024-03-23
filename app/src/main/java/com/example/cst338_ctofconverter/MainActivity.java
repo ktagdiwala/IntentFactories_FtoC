@@ -59,14 +59,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public static Intent cToFIntentFactory(Context context, double celsiusVal){
-        //Used to switch from one activity to another
-        Intent intent = new Intent(context, MainActivity.class);
-
-        //celsiusVal is stored as an extra in the intent
-        intent.putExtra(CONVERTED_VALUE_EXTRA_KEY, celsiusVal);
-        return intent;
-    }
+//    public static Intent cToFIntentFactory(Context context, double celsiusVal){
+//        //Used to switch from one activity to another
+//        Intent intent = new Intent(context, MainActivity.class);
+//
+//        //celsiusVal is stored as an extra in the intent
+//        intent.putExtra(CONVERTED_VALUE_EXTRA_KEY, celsiusVal);
+//        return intent;
+//    }
 
     private double convertValue(){
         String enteredValue = binding.MainActivityEditText.getText().toString();

@@ -68,9 +68,4 @@ public class FtoCActivity extends AppCompatActivity {
         );
     }
 
-    public static Intent FtoCActivityIntentFactory(Context context, double receivedValue){
-        Intent intent = new Intent(context, MainActivity.class);
-        intent.putExtra(CONVERTED_VALUE_EXTRA_KEY, receivedValue);
-        return intent;
-    }
 }
