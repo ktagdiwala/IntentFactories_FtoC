@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/CtoF_Title_textView"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/celsius_to_fahrenheit_converter"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MainActivityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_a_value_to_convert"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CtoF_Title_textView" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:id="@+id/celsius_value_label_TextView"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/MainActivityEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/celsius_value"
+        android:labelFor="@id/MainActivityEditText" />
+
+    <Button
+        android:id="@+id/celsius_convert_button"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:onClick="displayConvertedValue"
+        android:text="@string/convert"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/celsius_value_label_TextView" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/celsius_converted_value_textView"
+        app:layout_constraintTop_toBottomOf="@id/celsius_convert_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="°F"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
