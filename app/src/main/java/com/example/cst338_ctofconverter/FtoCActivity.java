@@ -32,7 +32,7 @@ public class FtoCActivity extends AppCompatActivity {
         //sets the EditText textbox to the fahrenheit variable (thereby carrying-over the output from the CtoF converter)
         binding.FtoCEditText.setText(String.format(Locale.ENGLISH,"%.2f",fahrenheit));
 
-        binding.FtoCTitleTextView.setOnLongClickListener(new View.OnLongClickListener() {
+        binding.fahrenheitConvertButton.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 Intent intent = MainActivity.MainActivityIntentFactory(getApplicationContext(), convertValue());
