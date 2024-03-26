@@ -13,6 +13,13 @@ import com.example.cst338_ctofconverter.databinding.ActivityMainBinding;
 
 import java.util.Locale;
 
+/**
+ * @author Krishna Tagdiwala
+ * @since March 21, 2024
+ * CST 338 - Software Design with Dr. C
+ * Intent Factories: Temperature Converter (FtoC/CtoF)
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String CONVERTED_VALUE_EXTRA_KEY = "MainActivity_Converted_value_double";

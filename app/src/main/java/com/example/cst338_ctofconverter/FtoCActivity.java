@@ -12,6 +12,13 @@ import com.example.cst338_ctofconverter.databinding.ActivityFtoCactivityBinding;
 
 import java.util.Locale;
 
+/**
+ * @author Krishna Tagdiwala
+ * @since March 21, 2024
+ * CST 338 - Software Design with Dr. C
+ * Intent Factories: Temperature Converter (FtoC/CtoF)
+ */
+
 public class FtoCActivity extends AppCompatActivity {
 
     //key used to retrieve a value (like in HashMaps)
